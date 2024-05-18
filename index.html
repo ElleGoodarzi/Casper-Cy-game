@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casper and Cy's Fun Game</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            color: #333;
+        }
+        .header {
+            background-color: #ffcc00;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4500;
+            text-shadow: 2px 2px #ffa500;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .character-section {
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #ff4500;
+            border-radius: 10px;
+            background-color: #ffebcd;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .character-section:hover {
+            transform: scale(1.1);
+            background-color: #ffe4b5;
+        }
+        .character-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #4682b4;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Casper and Cy's Fun Game!</h1>
+    </div>
+    <div class="content">
+        <div class="character-section" onclick="alert('You selected Siren Head!')">
+            <img src="https://via.placeholder.com/250x300.png?text=Siren+Head" alt="Siren Head">
+            <p class="character-name">Siren Head</p>
+        </div>
+        <div class="character-section" onclick="alert('You selected Slenderman!')">
+            <img src="https://via.placeholder.com/250x300.png?text=Slenderman" alt="Slenderman">
+            <p class="character-name">Slenderman</p>
+        </div>
+        <div class="character-section" onclick="alert('You selected Cartoon Cat!')">
+            <img src="https://via.placeholder.com/250x300.png?text=Cartoon+Cat" alt="Cartoon Cat">
+            <p class="character-name">Cartoon Cat</p>
+        </div>
+        <div class="character-section" onclick="alert('You selected God of Everything!')">
+            <img src="https://via.placeholder.com/250x300.png?text=God+of+Everything" alt="God of Everything">
+            <p class="character-name">God of Everything</p>
+        </div>
+        <div class="character-section" onclick="alert('You selected Ninja!')">
+            <img src="https://via.placeholder.com/250x300.png?text=Ninja" alt="Ninja">
+            <p class="character-name">Ninja</p>
+        </div>
+    </div>
+</body>
+</html>
